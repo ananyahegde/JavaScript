@@ -6,11 +6,20 @@
 }
 
 .calculator .calculator-display {
-  width: 75%;
+  width: 100%;
   padding: 50px;
   background-color: #242424;
-  text: white;
   border-radius: 6px;
+  box-sizing: border-box;
+  height: 100px;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+
+.calculator .calculator-display p {
+  color: white;
+  float: right;
+  font-size: 28px;
 }
 
 .calculator .calculator-keys {
@@ -26,9 +35,12 @@
 
 .calculator .calculator-keys #ac {
   grid-area: 1 / 1 / 2 / 3;
-  background-color: #808080;
+  background-color: #969696;
 }
 
+.calculator .calculator-keys #ac:hover {
+  background-color: #808080;
+}
 .calculator .calculator-keys #zero {
   grid-area: 5 / 1 / 6 / 3;
 }
@@ -38,6 +50,16 @@
   background-color: #969696;
 }
 
+.calculator .calculator-keys #equals:hover {
+  background-color: #808080;
+}
+
 .calculator .calculator-keys .operator {
   background-color: #F58E27;
 }
+
+.calculator .calculator-keys .operator:hover {
+  background-color: #F4800B;
+}
+
+

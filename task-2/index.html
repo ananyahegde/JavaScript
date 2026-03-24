@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  
-  <body>
-    <div class="calculator"> 
-      <div class="calculator-display"> &nbsp; </div>
-      <div class="calculator-keys"> 
-        <button id="ac"> AC </button>
-        <button class="operator"> &#247; </button>
-        <button class="operator"> &#215; </button>
-        <button> 7 </button>
-        <button> 8 </button>
-        <button> 9 </button>
-        <button class="operator"> &#45; </button>
-        <button> 4 </button>
-        <button> 5 </button>
-        <button> 6 </button>
-        <button class="operator"> &#43; </button>
-        <button> 1 </button>
-        <button> 2 </button>
-        <button> 3 </button>
-        <button id="equals"> &#61; </button>
-        <button id="zero"> 0 </button>
-        <button> . </button>
-      </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <div class="calculator"> 
+    <div class="calculator-display"> <p>0</p> </div>
+    <div class="calculator-keys"> 
+      <button id="ac" onclick="clearDisplay()"> AC </button>
+      <button class="operator" onclick="handleOperator('/')">&#247;</button>
+      <button class="operator" onclick="handleOperator('*')">&#215;</button>
+
+      <button class="number" onclick="appendInput(this)">7</button>
+      <button class="number" onclick="appendInput(this)">8</button>
+      <button class="number" onclick="appendInput(this)">9</button>
+
+      <button class="operator" onclick="handleOperator('-')">&#45;</button>
+
+      <button class="number" onclick="appendInput(this)">4</button>
+      <button class="number" onclick="appendInput(this)">5</button>
+      <button class="number" onclick="appendInput(this)">6</button>
+
+      <button class="operator" onclick="handleOperator('+')">&#43;</button>
+
+      <button class="number" onclick="appendInput(this)">1</button>
+      <button class="number" onclick="appendInput(this)">2</button>
+      <button class="number" onclick="appendInput(this)">3</button>
+
+      <button id="equals" onclick="handleEquals()">&#61;</button>
+      <button id="zero" onclick="appendInput(this)">0</button>
+      <button id="decimal" onclick="appendInput(this)">.</button>
     </div>
-  </body>
-  
-  <script src="./index.js"> </script>
+  </div>
+</body>
+
+<script src="./index.js"> </script>
 </html>
