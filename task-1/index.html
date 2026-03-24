@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title> To-Do App </title>
     <link rel="stylesheet" href="./index.css" />
   </head>
 
@@ -12,25 +12,24 @@
     <h1> To-do List </h1>
 
     <input type="text" id="text-input" placeholder="Add a task">
-    <button id="add"> Add </button>
+    <button id="add" onclick="addTodo()"> Add </button>
     
-    <div class="list-container"> 
-      <ul> 
-        
-        <li>
-          <input type = "checkbox" id="task1">
-          <label for="task1"> Task One </label>
-          <button class="delete"> Delete </button>
-        </li>
-        
-        <li>
-          <input type = "checkbox" id="task2">
-          <label for="task1"> Task Two </label>
-          <button class="delete"> Delete </button>
-        </li>
-
-      </ul>
-    </div>
+    <ul class="list-container"> 
+      <li>
+        <input type = "checkbox" id="task1">
+        <label for="task1"> Task One </label>
+        <button class="delete" onclick="removeTodo(this)"> Remove </button>
+      </li>
+      
+      <li>
+        <input type = "checkbox" id="task2">
+        <label for="task2"> Task Two </label>
+        <button class="delete" onclick="removeTodo(this)"> Remove </button>
+      </li>
+    </ul>
   </div>
+ 
+  <script src="./index.js"> </script>
+
 </body>
 </html>
