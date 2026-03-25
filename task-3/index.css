@@ -22,36 +22,55 @@ h1 {
   cursor: pointer;
 }
 
-.overlay {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  width: 22%;
-  height: 66%;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+    background: rgba(0, 0, 0, 0.1) opacity(1);
+    backdrop-filter: blur(3px) opacity(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    background: rgba(0, 0, 0, 0.5) opacity(1);
+    backdrop-filter: blur(6px) opacity(1);
+  }
 }
 
-.overlay img {
-  position: relative;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-.overlay p {
-  position: absolute;
-  z-index: 1;
-  left: 90%;
-  top: 0;
-  font-size: 24px;
-  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .overlay.show {
   visibility: visible;
   opacity: 1;
+  animation: fadeIn 0.4s ease;
 }
+
+.overlay img {
+  z-index: 2;
+  width: 22%;
+  height: 66%;
+}
+
+.overlay p {
+  position: absolute;
+  z-index: 1;
+  left: 63%;
+  top: 8%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 
