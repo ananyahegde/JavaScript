@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1> Weather App </h1>
+    
+    <div class="container"> 
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="get" onclick="getWeatherInfo()"> Get </button>
+      
+      <div class="weather-container">
+        <div class="weather-item">
+          <h3>Humidity</h3>
+          <p class="humidity-value"></p>
+        </div>
+
+        <div class="weather-item">
+          <h3>Temperature</h3>
+          <p class="temperature-value"></p>
+        </div>
+
+        <div class="weather-item">
+          <h3>Metric 1</h3>
+          <p class="metric-1"></p>
+        </div>
+
+        <div class="weather-item">
+          <h3>Metric 2</h3>
+          <p class="metric-2"></p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script src="./index.js"><script>
+</html>
