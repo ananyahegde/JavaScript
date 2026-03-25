@@ -1,0 +1,57 @@
+h1 {
+  font-family: cursive;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.img-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-rows: 180px 180px 180px 180px;
+  grid-template-columns: 120px 120px 120px 120px;
+  grid-gap: 10px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 22%;
+  height: 66%;
+}
+
+.overlay img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay p {
+  position: absolute;
+  z-index: 1;
+  left: 90%;
+  top: 0;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.overlay.show {
+  visibility: visible;
+  opacity: 1;
+}
+
