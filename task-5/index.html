@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+
+    <!-- Home Screen -->
+    <div id="home-screen">
+      <h1>Quiz Time</h1>
+      <p>Let's see what you've got.</p>
+      <img src="./assets/img.png" alt="hero image"/>
+      <button id="play-btn" onclick="currentQ=1; populateQ(1)">Play</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen">
+
+      <div id="progress">
+        <span id="progress-text">Question 1 / 5</span>
+        <div id="progress-bar">
+          <div id="progress-bar-fill"></div>
+        </div>
+      </div>
+
+      <h2 id="question"></h2>
+
+      <div id="options">
+        <button class="option-btn" id="opt1" onclick="selectOption('opt1')"></button>
+        <button class="option-btn" id="opt2" onclick="selectOption('opt2')"></button>
+        <button class="option-btn" id="opt3" onclick="selectOption('opt3')"></button>
+        <button class="option-btn" id="opt4" onclick="selectOption('opt4')"></button>
+      </div>
+
+      <div id="nav">
+        <button id="next-btn" onclick="nextQ()">Next</button>
+      </div>
+    </div>
+
+    <!-- End Screen -->
+    <div id="end-screen">
+      <h1>Quiz Complete!</h1>
+      <p id="final-score"></p>
+      <p id="score-feedback"></p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

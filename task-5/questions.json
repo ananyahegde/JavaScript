@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "What is the longest river in the world?",
+    "options": ["Amazon", "Yangtze", "Nile", "Mississippi"],
+    "answer": "Nile"
+  },
+  {
+    "id": 2,
+    "question": "How many hearts does an octopus have?",
+    "options": ["1", "2", "3", "4"],
+    "answer": "3"
+  },
+  {
+    "id": 3,
+    "question": "Which country invented pizza?",
+    "options": ["France", "Greece", "USA", "Italy"],
+    "answer": "Italy"
+  },
+  {
+    "id": 4,
+    "question": "A group of flamingos is called a what?",
+    "options": ["Flock", "Flamboyance", "Flutter", "Blush"],
+    "answer": "Flamboyance"
+  },
+  {
+    "id": 5,
+    "question": "Which planet has the most moons?",
+    "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "answer": "Saturn"
+  },
+  {
+    "id": 6,
+    "question": "What is the most consumed beverage in the world after water?",
+    "options": ["Coffee", "Beer", "Tea", "Cola"],
+    "answer": "Tea"
+  },
+  {
+    "id": 7,
+    "question": "How long is a goldfish's memory, really?",
+    "options": ["3 seconds", "3 minutes", "Several months", "1 day"],
+    "answer": "Several months"
+  },
+  {
+    "id": 8,
+    "question": "Which animal cannot jump?",
+    "options": ["Hippo", "Rhino", "Elephant", "Sloth"],
+    "answer": "Elephant"
+  },
+  {
+    "id": 9,
+    "question": "What percentage of the Earth is covered by water?",
+    "options": ["51%", "61%", "71%", "81%"],
+    "answer": "71%"
+  },
+  {
+    "id": 10,
+    "question": "Which country consumes the most chocolate per capita?",
+    "options": ["USA", "Belgium", "Switzerland", "Germany"],
+    "answer": "Switzerland"
+  },
+  {
+    "id": 11,
+    "question": "How many bones does a shark have?",
+    "options": ["206", "0", "54", "12"],
+    "answer": "0"
+  },
+  {
+    "id": 12,
+    "question": "What is the fear of long words called?",
+    "options": ["Logophobia", "Verbophobia", "Hippopotomonstrosesquippedaliophobia", "Lexophobia"],
+    "answer": "Hippopotomonstrosesquippedaliophobia"
+  },
+  {
+    "id": 13,
+    "question": "Which fruit has its seeds on the outside?",
+    "options": ["Kiwi", "Strawberry", "Raspberry", "Fig"],
+    "answer": "Strawberry"
+  },
+  {
+    "id": 14,
+    "question": "Cleopatra lived closer in time to which event?",
+    "options": ["Building of the Great Pyramid", "The Moon Landing", "Julius Caesar's birth", "The Roman Empire's fall"],
+    "answer": "The Moon Landing"
+  },
+  {
+    "id": 15,
+    "question": "What is the national animal of Scotland?",
+    "options": ["Stag", "Lion", "Unicorn", "Thistle"],
+    "answer": "Unicorn"
+  },
+  {
+    "id": 16,
+    "question": "How many days does it take for the Earth to orbit the Sun?",
+    "options": ["354", "365.25", "360", "370"],
+    "answer": "365.25"
+  },
+  {
+    "id": 17,
+    "question": "Which country has the most natural lakes?",
+    "options": ["Russia", "USA", "Brazil", "Canada"],
+    "answer": "Canada"
+  },
+  {
+    "id": 18,
+    "question": "What is the loudest animal on Earth?",
+    "options": ["Blue Whale", "Howler Monkey", "Sperm Whale", "Lion"],
+    "answer": "Sperm Whale"
+  },
+  {
+    "id": 19,
+    "question": "Bananas are technically classified as what?",
+    "options": ["Fruit", "Vegetable", "Berry", "Herb"],
+    "answer": "Berry"
+  },
+  {
+    "id": 20,
+    "question": "How many times can a human heart beat in a lifetime (approx.)?",
+    "options": ["1 million", "100 million", "2.5 billion", "10 billion"],
+    "answer": "2.5 billion"
+  }
+]

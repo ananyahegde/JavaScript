@@ -1,0 +1,141 @@
+body {
+  background-color: #A7E2C1;
+  font-family: 'Comic Relief', cursive;
+  color: #123622;
+}
+
+#home-screen {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home-screen h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+#home-screen p {
+  font-size: 24px;
+}
+
+#home-screen img {
+  margin-top: 48px;
+  height: 80%;
+  width: 80%;
+}
+
+#play-btn, #next-btn {
+  display: block;
+  align-self: center;
+  margin-top: 48px;
+  outline: none;
+  border: 1px solid #1D5838;
+  border-radius: 8px;
+  background-color: #1D5838;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+#game-screen {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#progress span {
+  font-size: 24px;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 10px;
+  padding-top: 40px;
+  background-color: #A7E2C1;
+  border-radius: 8px;
+}
+
+#progress-bar-fill {
+  height: 10px;
+  width: 0%;
+  background-color: #1D5838;
+  border-radius: 8px;
+  transition: width 0.3s ease;
+}
+
+#question {
+  padding-top: 30px;
+  font-size: 38px;
+  color: #1D5838;
+}
+
+#options {
+  display: grid;
+  grid-template-rows: minmax(70px, auto) minmax(70px, auto);
+  grid-template-columns: minmax(210px, auto) minmax(210px, auto);
+  gap: 20px 60px;
+  padding-top: 80px;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#options button {
+  background-color: #349D63;
+  color: #1D5838;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  color: #123622;
+  cursor: pointer;
+  overflow-wrap: break-word;
+}
+
+#options button.selected {
+  background-color: #123622;
+  color: white;
+  border: 2px solid #123622;
+}
+
+#next-btn {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#end-screen {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+#final-score {
+  font-size: 48px;
+  font-weight: 900;
+  color: #1D5838;
+}
+
+#score-feedback {
+  font-size: 24px;
+  font-weight: 600;
+}
