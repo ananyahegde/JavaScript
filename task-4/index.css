@@ -41,10 +41,14 @@ h1 {
   grid-template-columns: 250px 250px;
   margin-top: 80px;
   gap: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .weather-container .weather-item {
   background: #BBB5DC;
+  position: relative;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5);
@@ -52,4 +56,15 @@ h1 {
 
 .weather-container .weather-item h3 {
   font-size: 18px;
+  font-weight: 300;
 }
+
+.weather-container .weather-item p {
+  position: absolute;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  font-size: 38px;
+  font-weight: 900;
+}
+
+
