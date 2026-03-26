@@ -1,3 +1,8 @@
+/*
+  This program fetches an external JSON file and requires a local server to run due to browser CORS restrictions. 
+  Open it using VS Code's Live Server extension or any HTTP server — simply opening the HTML file directly in a browser will not work.
+*/
+
 home_screen = document.getElementById("home-screen");
 game_screen = document.getElementById("game-screen");
 end_screen = document.getElementById("end-screen");
