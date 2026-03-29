@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="chat-container"> 
+        <div id="user-profile">
+          <img class="pfp" src="./assets/pfp.jpg" alt="pfp" />
+          <div>
+            <h3 class="name"> You </h3>
+            <p> Tee hee! </p>
+          </div>
+        </div>
+        
+        <div class="chat-card" id="1"> 
+          <img class="pfp" src="./assets/pfp1.png" alt="pfp" />
+          <div>
+            <p class="name"> Neko </p>
+            <p class="message"> Hey! How are you doing? </p>
+          </div>
+        </div>
+        
+        <div class="chat-card" id="2"> 
+          <img class="pfp" src="./assets/pfp2.png" alt="pfp" />
+          <div>
+            <p class="name"> Komi </p>
+            <p class="message"> Sure! Let's catch up? </p>
+          </div>
+        </div>
+        
+        <div class="chat-card" id="3"> 
+          <img class="pfp" src="./assets/pfp3.png" alt="pfp" />
+          <div>
+            <p class="name"> Kanna </p>
+            <p class="message"> How did your exams go? </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-screen"> 
+        <div class="chat-header"> 
+          <img class="pfp" src="./assets/pfp1.png" alt="pfp" />
+          <h3> Neko </h3>
+        </div>
+        <div class="chat-body">
+          <!-- chats will appear here -->
+          <div id="1"> <p> Hey! How are you doing? </p> </div>
+        </div>
+        <input type="text" id="input-message" placeholder="type something ...">
+      </div>
+    </div>
+  </body>
+
+  <script src="./index.js"></script>
+</html>
