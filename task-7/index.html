@@ -17,7 +17,7 @@
           </div>
         </div>
         
-        <div class="chat-card" id="1"> 
+        <div class="chat-card"> 
           <img class="pfp" src="./assets/pfp1.png" alt="pfp" />
           <div>
             <p class="name"> Neko </p>
@@ -25,7 +25,7 @@
           </div>
         </div>
         
-        <div class="chat-card" id="2"> 
+        <div class="chat-card"> 
           <img class="pfp" src="./assets/pfp2.png" alt="pfp" />
           <div>
             <p class="name"> Komi </p>
@@ -33,7 +33,7 @@
           </div>
         </div>
         
-        <div class="chat-card" id="3"> 
+        <div class="chat-card"> 
           <img class="pfp" src="./assets/pfp3.png" alt="pfp" />
           <div>
             <p class="name"> Kanna </p>
@@ -49,9 +49,12 @@
         </div>
         <div class="chat-body">
           <!-- chats will appear here -->
-          <div id="1"> <p> Hey! How are you doing? </p> </div>
+          <div class="msg"> 
+            <p> Hey! How are you doing? </p> 
+            <p class="timestamp"> 4:41 PM </p>
+          </div>
         </div>
-        <input type="text" id="input-message" placeholder="type something ...">
+        <input type="text" id="input-message" placeholder="type something ..." onkeydown="sendMessage(event)">
       </div>
     </div>
   </body>

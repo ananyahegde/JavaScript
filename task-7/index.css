@@ -97,14 +97,20 @@ body {
   overflow-y: auto;
 }
 
-.chat-screen .chat-body div p {
-  display: inline-block;
-  width: auto;
+.chat-screen .chat-body .msg {
+  width: fit-content;
   color: white;
-  padding: 20px;
+  padding: 8px 20px 20px 20px;
   margin: 20px;
   background: #0A1526;
   border-radius: 12px;
+}
+
+.chat-screen .chat-body div .timestamp {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 12px;
+  float: right;
 }
 
 .chat-screen #input-message {
@@ -113,4 +119,33 @@ body {
   color: white;
   font-size: 14px;
   border: 1px solid #070B12;
+}
+
+
+/* CSS classes for JS code */
+
+.chat-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.text {
+  display: inline-flex;
+  flex-direction: column;
+  color: white;
+  background: #0A1526;
+  border-radius: 12px;
+  text-align: right;
+  padding: 15px 15px;
+  gap: 12px;
+}
+
+.timestamp {
+  font-size: 12px;
+  text-align: right;
 }
