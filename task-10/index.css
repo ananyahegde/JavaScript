@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/hero-section-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  min-height: 200px;
+}
+
+.hero-section h1 {
+  font-family: "Jim Nightshade", cursive;
+  font-size: 72px;
+}
+
+.hero-section h3 {
+  font-family: "Poiret One", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  gap: 40px;
+  margin: 0;
+  padding: 20px;
+  padding-right: 80px;
+  background: #D4DEE2;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+#browse, #cart {
+  display: none;
+}
+
+#home {
+  margin: 30px 85px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#home h3 {
+  font-size: 24px;
+}
+
+.product-card {
+  float: left;
+  width: 350px;
+  height: 500px;
+  margin: 20px 100px 0px 0px;
+  border: 1px solid #666;
+  border-radius: 12px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.product-card img {
+  height: 350px;
+  width: 350px;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+}
+
+.product-card h5 {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.product-card p {
+  font-size: 18px;
+  margin: 20px 0;
+  text-align: center;
+  color: #666;
+}
