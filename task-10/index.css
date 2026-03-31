@@ -106,6 +106,26 @@ body {
   font-family: "Jim Nightshade", cursive;
 }
 
+#browse #product-toolbar input {
+  padding: 12px;
+  width: 15%;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+#browse #product-toolbar select {
+  padding: 12px;
+  width: 10%;
+  border-radius: 12px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.err-message {
+  font-size: 38px;
+  font-family: "Jim Nightshade", cursive;
+}
+
 .product-card-browse {
   float: left;
   width: 350px;
