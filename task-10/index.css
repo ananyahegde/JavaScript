@@ -122,8 +122,10 @@ body {
 }
 
 .err-message {
-  font-size: 38px;
-  font-family: "Jim Nightshade", cursive;
+  font-size: 24px;
+  margin: 12px 0;
+  font-weight: 900;
+  font-family: "poiret one", sans-serif;
 }
 
 .product-card-browse {
@@ -192,5 +194,101 @@ body {
   font-size: 16px;
   min-width: 20px;
   text-align: center;
+}
+
+
+#cart {
+  margin: 30px 45px;
+  padding: 0 35px 50px 35px;
+  width: 100%;
+}
+
+#cart h3 {
+  font-size: 38px;
+  font-family: "Jim Nightshade", cursive;
+}
+
+.empty-msg {
+  font-size: 24px;
+  margin: 12px 0;
+  font-weight: 900;
+  font-family: "poiret one", sans-serif;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cart-item-info p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: "poiret one", sans-serif;
+}
+
+.cart-item-info p.item-price-quantity {
+  font-size: 18px;
+  font-family: "poiret one", sans-serif;
+  font-weight: normal;
+}
+
+.total-container {
+  max-width: 400px;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.total-container p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 18px;
+  font-family: "poiret one", sans-serif;
+}
+
+.total-container p.subtotal {
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "poiret one", sans-serif;
+}
+
+.total-container p.grand-total {
+  font-size: 28px;
+  font-weight: 900;
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+  margin-top: 4px;
+  font-family: "poiret one", sans-serif;
 }
 
